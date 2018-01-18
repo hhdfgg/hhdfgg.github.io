@@ -48,6 +48,33 @@
             background-size: cover;
             background-position: center 50%;
         }
+
+.snow_box {
+ background-color: #000;
+   background-image: url(images/snow1.png), url(images/snow2.png), url(images/snow3.png);
+ -webkit-animation: snow 20s linear infinite;
+ animation: snow 20s linear infinite;
+ width: 300px;
+ height: 300px;
+ margin-bottom: 36px;
+}
+
+@-webkit-keyframes snow {
+ 0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+ 50% { background-color: #b4cfe0 }
+ 100% {
+ background-position: 500px 1000px, 400px 400px, 300px 300px;
+ background-color: #6b92b9;
+ }
+}
+@keyframes snow {
+ 0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+ 50% { background-color: #b4cfe0 }
+ 100% {
+ background-position: 500px 1000px, 400px 400px, 300px 300px;
+ background-color: #6b92b9;
+ }
+}
     </style>
 </head>
 
