@@ -43,16 +43,19 @@
         table {
         	border-collapse: collapse;
         }
+
         td {
         	border: solid 1px;
         	padding: 0.5em;
         }
-        tr {
 
+        tr {
            border-style: solid;
            border: 1px #1C79C6 solid;
         }
-
+        tbody{
+              display: table-row-group;
+        }
 
         .jumbotron{
             width: auto;
@@ -91,7 +94,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                  <h1><font color="Yellow">ポートフォリオテスト</h1></font>
+                  <h1><font color="red">ポートフォリオ</h1></font>
                   <p class="lead"><font color="Orange"><b>就職活動用のポートフォリオを作成するブログです。</b></font></p>
                 </div>
                 <div class="col-sm-6">
@@ -113,8 +116,8 @@
                 </div>
             </div>
             <hr>
-
             <h2 id="works">Works</h2>
+            <hr>
             <div class="row text-center">
               <center>
                   <a href="https://unityroom.com/games/butukaruna-01/webgl"><img src="img/1week_space_GIF.gif" class="img-responsive" width="400px" height="400px">unityroomのUnity1週間ゲームジャム：space</a><br><br>
@@ -129,17 +132,14 @@
                 </center>
             </div>
             <hr>
-            <h2 id="skills">Skills(勉強中)</h2>
-            <p>Unity<br>PhotoShop CC 2017<br>MAYA 2017<br>C<br>C++<br>C#</p>
-            <div class="row starter-template">
-            <hr>
-            <h2 id="Academic">学歴</h2>
-            <table border="5" cellpadding="5" cellspacing="0">
-              <tbody >
+            <div class="row">
+            <h2 id="Academic" text-left>学歴</h2><hr>
+            <table border="5" cellpadding="20" cellspacing="20">
+              <tbody>
               <tr style="background:#b0c4de">
-                <th>年</th>
-                <th>月</th>
-                <th>学歴</th>
+                <th>&ensp;年</th>
+                <th>&ensp;月</th>
+                <th>&ensp;学歴</th>
               </tr>
               <tr>
                 <td>平成26年</td>
@@ -162,7 +162,15 @@
                 <td>専門学校デジタルアーツ東京&emsp;卒業見込み</td>
               </tr>
             </table>
+            </div>
+            <br><br>
+            <h2 id="skills">Skills(勉強中)</h2>
+            <hr>
+            <p>Unity<br>PhotoShop CC 2017<br>MAYA 2017<br>C<br>C++<br>C#</p>
+            <div class="row starter-template">
+
         </div>
+
         <a class="btn btn-primary" href="#">Topに戻る</a>
     </div>
 
