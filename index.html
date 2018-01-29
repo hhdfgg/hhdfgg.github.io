@@ -61,7 +61,7 @@
         th{
 
         }
-        
+
 
         .jumbotron{
             width: auto;
@@ -71,6 +71,17 @@
             background-position: center 50%;
         }
     </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="jquery/dist/jquery.bxslider.min.js"></script>
+    <link href="jquery/dist/jquery.bxslider.css" rel="stylesheet" />
+    <script type="text/javascript">
+            $(document).ready(function(){
+                $('.bxslider').bxSlider({
+                    auto: true,
+                });
+        	});
+    </script>
 </head>
 
 <body>
@@ -173,6 +184,14 @@
             <hr>
             <h2 id="skills">Skills(勉強中)</h2>
             <hr>
+
+<ul class="bxslider">
+		<li><img src="img/MAYA/HOuse_Bt_2.jpg"></li>
+		<li><img src="img/MAYA/HOuse_Bt_2.jpg"></li>
+		<li><img src="表示したい画像のパス"></li>
+        	<li><img src="表示したい画像のパス"></li>
+		<li><img src="表示したい画像のパス"></li>
+	</ul>
             <p>Unity<br>PhotoShop CC 2017<br>MAYA 2017<br>C<br>C++<br>C#</p>
             <div class="row starter-template">
 
@@ -183,7 +202,7 @@
 
     <!-- /.container -->
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 
