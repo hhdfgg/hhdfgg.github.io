@@ -55,13 +55,38 @@
            border-style: solid;
            border: 1px #1C79C6 solid;
         }
-        tbody{
-              display: table-row-group;
-        }
-        th{
 
+        .bookends {
+          position: relative;
+          border-width: 5px;
+          border-color: hsl(0, 0%, 50%) transparent;
+          height: 11px;
+          border-style: double;
+          width: 100%;
         }
 
+        .slash-3 {
+          height: 10px;
+          background-image: linear-gradient(45deg,
+          hsla(0, 0%, 5%, 0),
+          hsla(0, 0%, 5%, 0) 33.33%,
+          hsla(0, 0%, 5%, 1) 33.33%,
+          hsla(0, 0%, 5%, 1) 66.67%,
+          hsla(0, 0%, 5%, 0) 66.67%,
+          hsla(0, 0%, 5%, 0) 100%);
+          background-size: 10px 100%;
+          width: 100%;
+        }
+
+
+        .accessory {
+          height: 6px;
+          background-image: radial-gradient(
+            closest-side,
+            hsla(0, 0%, 50%, 1.0),
+            hsla(0, 0%, 50%, 0) 100%);
+          position: relative;
+        }
 
         .jumbotron{
             width: auto;
@@ -79,9 +104,11 @@
             $(document).ready(function(){
                 $('.bxslider').bxSlider({
                     auto: true,
-                    pause: 3500,
+                    pause: 4500,
                 });
         	});
+
+
     </script>
 </head>
 
@@ -90,7 +117,7 @@
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">ポートフォリオテスト</span>
+                    <span class="sr-only">ポートフォリオ</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -104,6 +131,7 @@
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#MAYA">MAYA</a></li>
                     <li><a href="#Academic">学歴</a></li>
+                    <li><a href="https://github.com/hhdfgg">GitHub</a></li>
                 </ul>
             </div>
             <!--/.nav-collapse -->
@@ -112,31 +140,20 @@
     <div class="jumbotron">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6">
-                  <h1><font color="red">ポートフォリオ</h1></font>
-                  <p class="lead"><font color="Orange"><b>就職活動用のポートフォリオを作成するブログです。</b></font></p>
-                </div>
-                <div class="col-sm-6">
-                    <center><img src="img/Kutori_Free.jpg" class="img-responsive" width="300" height="300px" ></center>
-                </div>
+
+                  <h1><font color="red">尾関 優人のポートフォリオ</h1></font>
+                  <p><font color="gold"><b>就職活動用のポートフォリオを作成するブログです。</b></font></p>
+                    <center><img src="img/Kutori_Free.png" class="img-responsive" width="300" height="300px" ></center>
+
             </div>
         </div>
     </div>
 
     <div class="container">
         <div class="starter-template">
-            <div class="row text-center">
-                <h2 id="works"></h2>
-                <div class="col-sm-4">
-                </div>
-                <div class="col-sm-4">
-                </div>
-                <div class="col-sm-4">
-                </div>
-            </div>
-            <hr>
-            <h2 id="works">Works</h2>
-            <hr>
+            <hr class="bookends">
+            <h1 id="works"><font color=black>&ensp;Works</font></h1>
+            <hr class="bookends">
             <div class="row text-center">
               <center>
                   <a href="https://unityroom.com/games/butukaruna-01/webgl"><img src="img/1week_space_GIF.gif" class="img-responsive" width="400px" height="400px">unityroomのUnity1週間ゲームジャム：space</a><br><br>
@@ -151,13 +168,13 @@
                 </center>
             </div>
           <div class="row">
-            <hr>
-              <h2 id="skills">Skills(勉強中)</h2>
-                <hr>
+            <hr class="accessory">
+              <h1 id="skills"><font color=black>&ensp;Skills(勉強中)</font></h1>
+                <hr class="accessory">
                   <p>Unity<br>PhotoShop CC 2017<br>MAYA 2017<br>C<br>C++<br>C#</p>
           </div>
           <hr>
-        <h2 id="MAYA" text-left>MAYA</h2><hr>
+        <h1 id="MAYA" text-left><font color=black>MAYA</font></h1><hr>
           <div class="row starter-template">
             <ul class="bxslider">
                 <li><img src="img/MAYA/House.jpg"></li>
@@ -173,11 +190,12 @@
                 </ul>
       </div>
 
-            <div class="row">
-          <hr>
-            <h2 id="Academic" text-left>学歴</h2><hr>
-            <table border="5" cellpadding="20" cellspacing="20" >
-              <tbody>
+          <div class="row">
+          <hr class="slash-3">
+            <h1 id="Academic" text-left><font color=black>&ensp;学歴</font></h1>
+            <hr class="slash-3">
+            <center>
+            <table border="5" cellpadding="20" cellspacing="20">
               <tr style="background:#b0c4de">
                 <th>&ensp;年</th>
                 <th>&ensp;月</th>
@@ -204,6 +222,7 @@
                 <td>専門学校デジタルアーツ東京&emsp;卒業見込み</td>
               </tr>
             </table>
+          </center>
             </div>
             <br><br>
             <hr>
