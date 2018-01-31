@@ -59,7 +59,7 @@
         .bookends {
           position: relative;
           border-width: 5px;
-          border-color: hsl(0, 0%, 50%) transparent;
+          border-color: lightgreen transparent;
           height: 11px;
           border-style: double;
           width: 100%;
@@ -87,6 +87,14 @@
             hsla(0, 0%, 50%, 0) 100%);
           position: relative;
         }
+
+        .dots {
+          border-width: 0 0 8px;
+          border-style: solid;
+          border-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 1"><circle fill="lightgreen" cx="1" cy="0.5" r="0.5"/></svg>') 0 0 100% repeat;
+          width: 100%;
+          border-color: lightgreen;
+         }
 
         .jumbotron{
             width: auto;
@@ -173,8 +181,9 @@
                 <hr class="accessory">
                   <p>Unity<br>PhotoShop CC 2017<br>MAYA 2017<br>C<br>C++<br>C#</p>
           </div>
-          <hr>
-        <h1 id="MAYA" text-left><font color=black>MAYA</font></h1><hr>
+          <hr class="dots">
+        <h1 id="MAYA" text-left><font color=black>MAYA</font></h1>
+        <hr class="dots">
           <div class="row starter-template">
             <ul class="bxslider">
                 <li><img src="img/MAYA/House.jpg"></li>
