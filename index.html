@@ -131,6 +131,11 @@
     });
     </script>
 
+<script type="text/javascript" src="jquery/jumble/jumble.min.js"></script>
+<script type="text/javascript">
+$('jumble').jumble([180,160,255],[230,20,130],true,false,500);
+</script>
+
 </head>
 
 <body>
@@ -162,7 +167,6 @@
         <div class="container">
             <div class="row">
                   <h1 class="burning"><font color="red">尾関 優人のポートフォリオ</h1></font>
-                  <p><font color="gold"><b>就職活動用のポートフォリオを作成するブログです。</b></font></p>
                     <center><img src="img/Kutori_Free.png" class="img-responsive" width="300" height="300px" ></center>
             </div>
         </div>
@@ -171,7 +175,7 @@
     <div class="container">
         <div class="starter-template">
             <hr class="bookends">
-            <h1 id="works"><font color=black>Works</font></h1>
+            <h1 id="works"><font color=black><jumble>Works</jumble></font></h1>
             <hr class="bookends"><br>
             <hr class="pill">
             <h2 id="unity"><font color=black>&ensp;Unity</font></h2>
@@ -192,15 +196,17 @@
                 </center>
             </div>
           <hr class="dots">
-        <h2 id="MAYA" text-left><font color=black>MAYA</font></h2>
+        <h2 id="MAYA" text-left class="jumble"><font color=black>MAYA</font></h2>
         <hr class="dots">
           <div class="row starter-template">
+            <p>建物制作でつくったものを簡易のライティングでレンダリングしたもの</p>
             <ul class="bxslider">
                 <li><img src="img/MAYA/House.jpg"></li>
                 <li><img src="img/MAYA/HOuse_Bt_2.jpg"></li>
                 <li><img src="img/MAYA/House_Front_N.jpg"></li>
                 <li><img src="img/MAYA/House_Front_N2.jpg"></li>
               </ul>
+              <p>課題でつくったキャラクター</p>
               <ul class="bxslider">
                 <li><img src="img/MAYA/Kutori_Free.jpg"></li>
                 <li><img src="img/MAYA/Kutori_Front_2.jpg"></li>
