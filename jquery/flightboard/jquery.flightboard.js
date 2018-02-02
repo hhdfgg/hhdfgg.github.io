@@ -1,10 +1,10 @@
 /* http://keith-wood.name/flightBoard.html
    Flight Board for jQuery 2.0.0.
    Written by Keith Wood (kbwood{at}iinet.com.au) October 2009.
-   Available under the MIT (https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt) license. 
+   Available under the MIT (https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt) license.
    Please attribute the author if you use it. */
 
-/* 
+/*
    $('div selector').flightboard();
    Or with options like:
    $('div selector').flightboard({speed: 1000});
@@ -25,7 +25,7 @@
 		@example $(selector).flightboard()
  $(selector).flightboard({speed: 1000, messages: ['First', 'Second']}) */
 	$.JQPlugin.createPlugin({
-	
+
 		/** The name of the plugin. */
 		name: pluginName,
 
@@ -46,7 +46,7 @@
 			@example afterFlip: function(prev, current) {
  	$('#status').text('Now showing ' + current);
  } */
-			
+
 		/** Default settings for the plugin.
 			@property [lettersImage='img/flightBoardLarge.png'] {string} Amalgamated image for letters background.
 			@property [lettersSize=[25,34]] {number[]} Width and height of individual letters.
@@ -87,7 +87,7 @@
 			beforeFlip: null,
 			afterFlip: null
 		},
-		
+
 		_getters: ['current', 'next'],
 
 		_uuid: new Date().getTime(),
@@ -122,7 +122,7 @@
 			elem.html(html);
 			this._prepareFlip(elem[0]);
 		},
-		
+
 		_preDestroy: function(elem, inst) {
 			this.stop(elem[0]);
 			elem.empty();

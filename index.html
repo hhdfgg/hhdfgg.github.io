@@ -131,6 +131,18 @@
     });
     </script>
 
+    <script src="jquery/flightboard/jquery.plugin.js"></script>
+    <script src="jquery/flightboard/jquery.flightboard.js"></script>
+    <script>
+    $(function () {
+      $('#basicBoard').flightboard({messages: ['OZEKI', 'PORTFOLIO'],
+        lettersImage: 'jquery/flightboard/flightBoardLarge.png',
+        shadingImages: ['jquery/flightboard/flightBoardHigh.png', 'jquery/flightboard/flightBoardShad.png']
+      });
+    });
+    </script>
+
+
 </head>
 
 <body>
@@ -162,7 +174,9 @@
         <div class="container">
             <div class="row">
                   <h1 class="burning"><font color="red">尾関 優人のポートフォリオ</h1></font>
-                    <center><img src="img/Kutori_Free.png" class="img-responsive" width="300" height="300px" ></center>
+                <br>  <div id="basicBoard"></div><br><br>
+
+                <br>    <center><img src="img/Kutori_Free.png" class="img-responsive" width="300" height="300px" ></center>
             </div>
         </div>
     </div>
